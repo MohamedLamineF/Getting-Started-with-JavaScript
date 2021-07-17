@@ -3,12 +3,14 @@ var nickname = "lamine";
 var twitinsta = "@mohamed_LamineF"
 var age = "26";
 
- function Helloworld(myName,myNickname,myAge,mytwit) {
+// a fucntion to print Hello World ...
+function Helloworld(myName,myNickname,myAge,mytwit) {
      console.log(`\n Hello World ! , I'm ${myName}, you can just call me ${myNickname}, and I'm ${myAge} years old, you can find me online as ${mytwit} \n`);
 };
 
 Helloworld(coder,nickname,age,twitinsta);
 
+//almost all comments are already printed
 console.log("Now, let's talk about some importants things on JS and try it on the same time");
 console.log("\n 1- Operations on JavaScript:\n");
 
@@ -32,11 +34,13 @@ console.log("typeof null ---> ", typeof null);
 console.log("typeof [1,2,3] ---> ", typeof [1,2,3]);
 
 console.log("\n 3- variables:\n");
+
 console.log("All we know simple values like num = 3 & str='Hello'\n");
 console.log("I declare this array: \nvar sandwich=['Tacos','chawarma','mariné','fajitas']");
 var sandwich=['Tacos','chawarma','mariné','fajitas'];
 console.log("sandwich.lenght ---> ", sandwich.length);
 console.log("sandwich[1] ---> ", sandwich[1]);
+
 
 console.log("\n4- if else : ");
 var age = 11;
@@ -51,27 +55,41 @@ else{
 console.log("\n 5- Loop");
 console.log("PS: i know coding with a static variable is ....., but this just some beginner test, im so sorry to my self");
 
-
+//for loop with counter i
 for(let i=0; i<sandwich.length;i++){
     console.log("Do you want to eat an ", sandwich[i], " ? ")
 }
 console.log("\ni'll ask you for a second time ");
 
+//sandwicho is just variable to move in the loop
 for(let sandwicho of sandwich){
     console.log("Do you want to eat an ", sandwicho, " ? ")
 }
 
 console.log("\nNow i'll use while loop")
 
+
+console.log('\nUse counter i')
+i = sandwich.length;
+while(i > 0){
+    console.log("Do you want to eat an ", sandwich[i-1], " ? ")
+    i--;
+}
+
+//pop take the last value in arrow ==> the first value will be sandwich[sandwich.length]
 console.log('\nUse pop()')
 while(sandwich.length > 0){
     let sandwicho = sandwich.pop();
     console.log("Do you want to eat an ", sandwicho, " ? ")
 }
 
+//shift is the opposite
 console.log('\nUse shift()')
-var sandwich=['Tacos','chawarma','mariné','fajitas'];
+// i need to Redefining  the arrow here because is empty , after pop all elements in the previous loop
+var sandwich=['Tacos','chawarma','mariné','fajitas']; 
+
 while(sandwich.length > 0){
     let sandwicho = sandwich.shift();
     console.log("Do you want to eat an ", sandwicho, " ? ")
 }
+//Thank you :) see you
