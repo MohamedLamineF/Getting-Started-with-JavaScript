@@ -20,9 +20,7 @@ console.log("The Coder Name is: ", coder);
 console.log("The Topic: ", topic);
 
 console.log("\nArrow Function");
-/*in this example i take a name of season of the year then try to get lenght from each one,
-first i'll use direct arrow function without name,
-then i use a function with a name indicate what i want to do*/
+/*in this example i take a name of season of the year then try to get lenght from each one, first i'll use direct arrow function without name, then i use a function with a name indicate what i want to do*/
 var seasons = ["Winter", "Spring", "Summer", "Autumn"];
 
 var seasonlength = seasons.map((season) => season.length);
@@ -51,13 +49,13 @@ console.log(
 );
 var os = "Android";
 {
-  let os = "Harmony OS"; //i know Harmony isn't OS but i prefer to write Harmony better ... :p
+  let os = "Harmony OS"; //i know i know Harmony isn't OS but i prefer to write Harmony not ... :p
   console.log(os);
 }
 console.log(os);
 
 console.log("Now we will write a function using var and let");
-//
+
 function letTest() {
   var x = 1;
   {
@@ -76,7 +74,7 @@ function formatStr(str){
     rest = str.slice(3);
     str = prefix.toUpperCase() + rest;
   };
-  //i didn't understand this /^FOO:/ !!!!!!!!!!!!!!!!!!!!!!!!
+  
   if(/^FOO:/.test(str)){
     return str;
   }
